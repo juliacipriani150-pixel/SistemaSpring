@@ -1,10 +1,7 @@
 package psii.senai.escola_spring_boot.Model;
 
-import org.springframework.data.annotation.Id;
+import jakarta.persistence.*;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
 
 @Entity
 public class Aluno {
@@ -17,7 +14,7 @@ public class Aluno {
     private String matricula;
     private String curso;
     private Integer idade;
-    
+
     public Long getId() {
         return id;
     }
