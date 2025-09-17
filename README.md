@@ -62,5 +62,5 @@ Uma vez em execução, a aplicação pode ser acessada por meio do navegador, ut
 
 7. Considerações Finais
 
-Este relatório apresentou as instruções necessárias para a configuração e execução de um projeto Spring Boot em ambiente local.
+Este README apresentou as instruções necessárias para a execução de um projeto Spring Boot em ambiente local.
 A utilização do localhost facilita o desenvolvimento, a realização de testes e a validação de funcionalidades antes da implantação em ambientes de homologação ou produção.
