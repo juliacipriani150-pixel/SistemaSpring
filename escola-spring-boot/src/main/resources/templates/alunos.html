@@ -3,6 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro de Alunos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            color: #8B0000; /* Vinho */
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            background-color: #B22222; /* Bordô */
+            padding: 20px;
+            width: 300px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form input {
+            width: 93%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #8B0000; /* Vinho */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form button:hover {
+            background-color: #800000; /* Um tom mais escuro de vinho */
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            color: #000000;
+        }
+
+
+        table th, table td {
+            padding: 10px;
+            border: 1px solid #333;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #8B0000; /* Vinho */
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #f1d0d0; /* Um tom claro de bordô */
+        }
+    </style>
 </head>
 <body>
     <h1>Cadastro de Alunos</h1>
@@ -16,7 +91,7 @@
     </form>
 
     <h2>Lista de Alunos</h2>
-    <table border="1">
+    <table>
         <tr>
             <th>ID</th><th>Nome</th><th>Matrícula</th><th>Curso</th><th>Idade</th>
         </tr>
