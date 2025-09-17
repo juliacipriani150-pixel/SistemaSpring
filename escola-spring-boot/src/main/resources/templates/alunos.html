@@ -3,106 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <title>Cadastro de Alunos</title>
- 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            color: #8B0000; /* Vinho */
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        form {
+            background-color: #B22222; /* Bordô */
+            padding: 20px;
+            width: 300px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #8B0000; /* Vinho */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        form button:hover {
+            background-color: #800000; /* Um tom mais escuro de vinho */
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        table th, table td {
+            padding: 10px;
+            border: 1px solid #333;
+            text-align: left;
+        }
+
+        table th {
+            background-color: #8B0000; /* Vinho */
+            color: white;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #f1d0d0; /* Um tom claro de bordô */
+        }
+    </style>
 </head>
-<style>
-body {
-    font-family: "Segoe UI", sans-serif;
-    background: #1b1b1f;
-    color: #f2e9f7;
-    margin: 0;
-    padding: 30px;
-}
-
-
-h1, h2 {
-    text-align: center;
-    color: #e3b8f1;
-    font-weight: 600;
-}
-
-
-form {
-    max-width: 400px;
-    margin: 20px auto;
-    background: #24242a;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 12px rgba(227, 184, 241, 0.2);
-}
-
-form input {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0 16px 0;
-    border: none;
-    border-radius: 8px;
-    background: #2f2f37;
-    color: #f2e9f7;
-    font-size: 14px;
-    transition: 0.3s;
-}
-
-form input:focus {
-    outline: none;
-    background: #3b3b45;
-    box-shadow: 0 0 6px #e3b8f1;
-}
-
-
-button {
-    width: 100%;
-    padding: 12px;
-    background: linear-gradient(135deg, #e3b8f1, #c77dff);
-    border: none;
-    border-radius: 8px;
-    color: #1b1b1f;
-    font-weight: bold;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    transform: scale(1.03);
-    box-shadow: 0 0 8px #c77dff;
-}
-
-
-table {
-    width: 90%;
-    margin: 30px auto;
-    border-collapse: collapse;
-    background: #24242a;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 0 12px rgba(227, 184, 241, 0.2);
-}
-
-th, td {
-    padding: 12px 15px;
-    text-align: center;
-}
-
-th {
-    background: #c77dff;
-    color: #1b1b1f;
-    font-weight: 600;
-}
-
-tr:nth-child(even) {
-    background: #2f2f37;
-}
-
-tr:nth-child(odd) {
-    background: #24242a;
-}
-
-tr:hover {
-    background: #3b3b45;
-    transition: 0.3s;
-}
-
-</style>
 <body>
     <h1>Cadastro de Alunos</h1>
 
@@ -115,7 +89,7 @@ tr:hover {
     </form>
 
     <h2>Lista de Alunos</h2>
-    <table border="1">
+    <table>
         <tr>
             <th>ID</th><th>Nome</th><th>Matrícula</th><th>Curso</th><th>Idade</th>
         </tr>
